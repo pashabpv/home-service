@@ -1,0 +1,37 @@
+// font-weight helper:
+
+// 100 Extra Light or Ultra Light;
+// 200 Light or Thin; 300 Book or Demi;
+// 400 Regular or Normal;
+// 500 Medium;
+// 600 Semibold or Demibold;
+// 700 Bold;
+// 800 Black or Extra Bold or Heavy;
+// 900 Extra Black or Fat or Ultra Black
+
+
+@mixin font($f-name, $f-style, $f-weight, $f-url)
+	@font-face
+		font-family: $f-name
+		font-style: $f-style
+		font-weight: $f-weight
+		src: url($f-url) format('woff2')
+
+// Roboto
+@include font('Roboto', normal, 400, '../fonts/roboto-regular-webfont.woff2')
+@include font('Roboto', italic, 400, '../fonts/roboto-italic-webfont.woff2')
+@include font('Roboto', normal, 700, '../fonts/roboto-bold-webfont.woff2')
+@include font('Roboto', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2')
+
+// Ubuntu
+@include font('Ubuntu', normal, 300, '../fonts/ubuntu-light-webfont.woff2')
+@include font('Ubuntu', italic, 300, '../fonts/ubuntu-lightitalic-webfont.woff2')
+@include font('Ubuntu', normal, 400, '../fonts/ubuntu-regular-webfont.woff2')
+@include font('Ubuntu', italic, 400, '../fonts/ubuntu-italic-webfont.woff2')
+@include font('Ubuntu', normal, 500, '../fonts/ubuntu-medium-webfont.woff2')
+@include font('Ubuntu', italic, 500, '../fonts/ubuntu-mediumitalic-webfont.woff2')
+@include font('Ubuntu', normal, 700, '../fonts/ubuntu-bold-webfont.woff2')
+@include font('Ubuntu', italic, 700, '../fonts/ubuntu-bolditalic-webfont.woff2')
+
+// fontawesome
+@include font('FontAwesome', normal, 400, '../fonts/fontawesome-webfont.woff2')
