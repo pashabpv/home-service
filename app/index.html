@@ -20,17 +20,19 @@
 <body>
 
 <header class="header">
-	<div class="header__top">
-		<div class="container">
-
+	<div class="container">
+		<div class="header__top">
+			
 			<div class="logo">
 				<a href="#">service-home</a>
 			</div>
-
-			<div class="contacts">
-				<daiv class="contacts__item">
+			
+			<div class="header__contacts">
+				<div class="contacts__item">
+					<div class="contacts">
 					<div class="contacts__item_name">Моб.телефон</div>
 					<a href="tel:+79781234567" class="contacts__item_desc">+7(978) 123 45 67</a>
+					</div>
 				</div>
 
 				<div class="contacts__item">
@@ -42,17 +44,28 @@
 					<div class="contacts__item_name">Почта</div>
 					<div class="contacts__item_desc">admin@admin.com</div>
 				</div>
-
-				<div class="soc-icon">
-					<a href="#" class="soc-icon__vk icon"><i class="fa fa-vk"></i></a>
-					<a href="#" class="soc-icon__in icon"><i class="fa fa-instagram"></i></a>
-					<a href="#" class="soc-icon__tg icon"><i class="fa fa-telegram"></i></a>
-				</div>
-
 			</div>
-
-		</div>  
-		<!-- header__top -->
+			
+			<div class="header__soc">
+				<a href="#" class="contacts__item_icon"><i class="fa fa-vk"></i></a>
+				<a href="#" class="contacts__item_icon""><i class="fa fa-instagram"></i></a>
+				<a href="#" class="contacts__item_icon""><i class="fa fa-telegram"></i></a>
+			</div>
+		</div>	<!-- header__top -->
+		
+	</div> <!--  end container -->
+	
+	<div class="header_nav">
+		<div class="container">
+			<nav class="nav">
+				<a href="#" class="nav__link">Главная</a>
+				<a href="#" class="nav__link">Услуги</a>
+				<a href="#" class="nav__link">Отзывы</a>
+				<a href="#" class="nav__link">О нас</a>
+				<a href="#" class="nav__link">Фото</a>
+				<a href="#" class="nav__link">Контакты</a>
+			</nav>
+		</div>
 	</div>
 </header>
 
