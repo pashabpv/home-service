@@ -17,10 +17,11 @@ input, textarea
 		border-color: green
 
 a
-
 	color: $text 
+	transition: color .1s linear	
 	&:hover, &:active
 		text-decoration: none
+		color: #ffb300
 
 body
 	font-size: 16px
@@ -66,44 +67,11 @@ body
 
 // .parent // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
 // 	background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)
-// .header__top
-// 	padding: 45px 140px
-// 	font-size: 0
-
-// 	.logo, .contacts__item
-// 		display: inline-block
-// 		text-align: middle
-	
-// 	.logo
-// 		font: 40px normal "Roboto", sans-serif
-// 		text-transform: uppercase
-// 		vertical-align: middle
-// 		margin: 0 90px 0 0 
-
-// 	.contacts__item
-// 		font-size: 28px
-// 		color: $text
-// 		line-height: 1.14
-// 		vertical-align: middle
-// 		padding: 0 37px 0 37px
-// 		border-right: 1px solid #000
-
-// 		.contacts__item_icon
-// 			font-family: "FontAwesome"
-// 			font-size: 35px
-// 			margin-right: 22px
-
-// 	.border-none
-// 		border-right: 0
-
-// 	.align-right
-// 		text-align: right
-
 
 .header__top 
 	display: flex
 	justify-content: space-between
-	padding: 45px 140px
+	padding: 45px 0
 	align-items: center
 	font-size: 0
 
@@ -124,6 +92,9 @@ body
 			
 			&:first-child
 				margin-left: 0
+
+			& a:hover
+				color: $text
 	
 	.header__soc
 		font: 28px "FontAwesome"
@@ -133,6 +104,8 @@ body
 
 			&:first-child
 					margin-left: 0
+			&:hover
+				color: #ffb300
 
 .header_nav 
 	background-color: #081544
@@ -148,6 +121,57 @@ body
 			text-transform: uppercase
 			font-size: 18px
 			margin-right: 33px
+			transition: color .1s linear
 
 			&:last-child
 				margin-right: 0
+			
+			&:hover 
+				color: #ffb300
+	
+.intro
+	padding: 40px 0
+
+	.intro__inner
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+
+		.text-block
+			line-height: 1.2
+			margin-right: 157px
+
+			.text-block__title
+				font-size: 48px
+				font-weight: bold
+			
+			.text-block__subtitle
+				font-size: 28px
+				font-weight: 300
+				margin-top: 58px
+
+		.intro__img
+			width: 600px
+
+.form-callback
+	background-color: #081544
+
+.form-wrap
+	display: flex
+	justify-content: center
+	flex-direction: row
+	
+	.field-wrap
+		position: relative
+
+		& label
+			position: absolute
+			width: 100%
+			text-align: left
+			pointer-events: none
+			padding-left: 5px
+			margin-bottom: 0
+
+		& input
+			padding-left: 5px
