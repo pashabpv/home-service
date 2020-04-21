@@ -157,7 +157,7 @@ body
 .form-callback
 	position: relative
 	background: #081544 url(../img/_src/bg-form.jpg) no-repeat
-	padding: 25px 0
+	padding: 38px 0
 	z-index: 0
 	&::before
 		content: ''
@@ -203,12 +203,11 @@ body
 			transition: 0.2s ease all
 
 		& input
-			padding: 10px 25px 
+			padding: 10px 25px 18px 25px 
 			width: 400px
 			border: 0
 			border-radius: 30px
 			font-size: 25px
-			font-family: 'Ubuntu', sans-serif
 			color: $text
 			
 			&:focus,
@@ -228,7 +227,51 @@ body
 	padding: 10px 70px 15px 70px
 	border: 0
 	background: linear-gradient(104deg, #ffb300, #ffdd01 81%)
+	transition: 0.5s ease all
 
-	&:focus, &:active
+	&:focus, &:hover
+		color: #000000
+		box-shadow: 0px 1px 10px  1px #ffb300 
 		outline: none
 
+	&:active
+		outline: none
+
+.section
+	padding: 47px 0 230px
+.section__header
+	text-align: center
+	line-height: 1.5
+	.section__title
+		font-size: 45px
+		font-weight: bold
+	.section__desc
+		font-size: 28px
+		line-height: 1.14
+		margin-top: 15px
+		margin-bottom: 105px
+
+.sa__items
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+	.sa__item
+		flex-basis: 450px
+		align-items: stretch
+		text-align: center
+		margin-bottom: 105px
+		
+		.sa__item-title
+			font-size: 30px
+			font-weight: bold
+			line-height: 1.17
+			margin-bottom: 35px
+			& > i
+				display: block
+				font-size: 45px
+				color: #000000
+				margin-bottom: 30px
+		.sa__item-desc
+			font-size: 28px
+			line-height: 1.14
